@@ -8,7 +8,11 @@ for (var i = 0; i <= userNumber; i++) {
   else if (stringofnumber.includes("2") === true) {
     // $("#string").append("beep")
     console.log("boop")
-  } else
+  }
+  else if (stringofnumber.includes("3") === true) {
+    console.log("I'm sorry, Dave. I'm afraid I can't do that.")
+  }
+  else
     // $("#string").append(userNumber)
     console.log(stringofnumber)
   }
@@ -16,17 +20,8 @@ for (var i = 0; i <= userNumber; i++) {
 
 
 
-  var string = i.toString();
-  var result = string.replace("1", "beep")
 
 
 
 
-
-if it has 1, console log beep instead of the numbers
-
-Step 2: Convert numbers with a 1 to "Beep"
-// * convert the number to a string
-// * check if the number contains a "1"
-// * if yes, log the string "Beep"
-// * if no, log the original number, not a string
+Step 5: Determine priority based on which digit in a two-digit number is greater
