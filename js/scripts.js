@@ -1,20 +1,3 @@
-// var userNumber = 15
-// for (var i = 0; i <= userNumber; i++) {
-//   var stringofnumber = i.toString();
-//   if (stringofnumber.includes("3") === true) {
-//     // $("#string").append("beep")
-//     console.log("I'm sorry, Dave. I'm afraid I can't do that.")
-//   } else if (stringofnumber.includes("2") === true) {
-//     // $("#string").append("beep")
-//     console.log("boop")
-//   } else if (stringofnumber.includes("1") === true) {
-//     console.log("beep")
-//   } else
-//   // $("#string").append(userNumber)
-//   console.log(stringofnumber)
-// }
-
-
 var beepboop = function(userNumber) {
   var array = []
   for (var i = 0; i <= userNumber; i++) {
@@ -30,20 +13,23 @@ var beepboop = function(userNumber) {
     }
   }
   console.log(array)
+  return array;
 }
 
 $(document).ready(function() {
   $("#numbers").submit(function(event) {
-    event.preventDefault()
+    event.preventDefault();
     var outputdata = parseInt($("#userNumber").val());
-    beepboop(outputdata);
-    $("#outputdata").show();
+    var outputArray = beepboop(outputdata);   // this becomes array
+    for (var i = 0; i <= outputArray.length; i++) {
+      console.log(outputArray[i]);
+    }
+    // You now need write a for loop using outputArray
+    // * write a loop that will display the content of the array to the user
+    // inside the loop you will need to  do something with jquesry like .append() .
+    // so each array element will get added to the HTML
+
+
+    $("#outputdata").show();    // this line shows the HTML element with the class "outputdata"
   });
 });
-
-// how to add things to an array
-
-// Take the Beeps, Boops, Sorry, and i, and PUT THEM into an ARRAY
-// Do this instead of the jQuery in the beepboop functions
-// Put array inside the beepboop function, directly under the var beepboop
-// And return array at the end of the function
