@@ -19,17 +19,13 @@ var beepboop = function(userNumber) {
 $(document).ready(function() {
   $("#numbers").submit(function(event) {
     event.preventDefault();
-    var outputdata = parseInt($("#userNumber").val());
-    var outputArray = beepboop(outputdata);   // this becomes array
-    for (var i = 0; i <= outputArray.length; i++) {
+    var userNumber = parseInt($("#userNumber").val());
+    var outputArray = beepboop(userNumber);   // this becomes array
+    for (var i = 0; i < outputArray.length; i++) {
       console.log(outputArray[i]);
+      $('ul').append("<li>" + outputArray[i] + "</li>")
     }
-    // You now need write a for loop using outputArray
-    // * write a loop that will display the content of the array to the user
-    // inside the loop you will need to  do something with jquesry like .append() .
-    // so each array element will get added to the HTML
-
-
     $("#outputdata").show();    // this line shows the HTML element with the class "outputdata"
+
   });
 });
