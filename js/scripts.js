@@ -12,7 +12,6 @@ var beepboop = function(userNumber) {
       array.push(i);
     }
   }
-  console.log(array)
   return array;
 }
 
@@ -20,12 +19,10 @@ $(document).ready(function() {
   $("#numbers").submit(function(event) {
     event.preventDefault();
     var userNumber = parseInt($("#userNumber").val());
-    var outputArray = beepboop(userNumber);   // this becomes array
+    var outputArray = beepboop(userNumber);
     for (var i = 0; i < outputArray.length; i++) {
-      console.log(outputArray[i]);
       $('ul').append("<li>" + outputArray[i] + "</li>")
     }
-    $("#outputdata").show();    // this line shows the HTML element with the class "outputdata"
-
+    $("#outputdata").show();
   });
 });
