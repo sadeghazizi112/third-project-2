@@ -1,12 +1,12 @@
 var beepboop = function(userNumber) {
   var array = []
   for (var i = 0; i <= userNumber; i++) {
-    var stringofnumber = i.toString();
-    if (stringofnumber.includes("3") === true) {
+    var stringOfNumber = i.toString();
+    if (stringOfNumber.includes("3") === true) {
       array.push("I'm sorry, Dave. I'm afraid I can't do that.")
-    } else if (stringofnumber.includes("2") === true) {
+    } else if (stringOfNumber.includes("2") === true) {
       array.push("beep");
-    } else if (stringofnumber.includes("1") === true) {
+    } else if (stringOfNumber.includes("1") === true) {
       array.push("boop");
     } else {
       array.push(i);
