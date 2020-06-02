@@ -18,10 +18,10 @@ _This is a program designed to convert numbers into a range of numbers, starting
 |Spec|Input|Output|
 |-|-|-|
 |Return a range of numbers from 0 to the inputted number.| 5 | 0,  1, 2, 3, 4, 5|
-|If the numbers contain a 3: all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that."|3|0, 1, 2, "I'm sorry, Dave. I'm afraid I can't do that."|
-|If the numbers contain a 2, but not a 3: all digits are replaced with "Boop!"|2|0, 1, "Boop!"|
-|If the numbers contain a 1, but not a 2 or 3: all digits are replaced with "Beep!"| 1 | 0, "Beep!"|
-|If the numbers contain two or more of these: the program will prioritize the highest digit| 13 | "Beep!", "Boop!", "I'm Sorry!"|
+|If the numbers contain a 3: all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that."|3|"I'm sorry, Dave. I'm afraid I can't do that."|
+|If the numbers contain a 2, but not a 3: all digits are replaced with "Boop!"|2|"Boop!"|
+|If the numbers contain a 1, but not a 2 or 3: all digits are replaced with "Beep!"|1|"Beep!"|
+|If the numbers contain two or more of these: the program will prioritize the highest digit|13|"I'm sorry, Dave. I'm afraid I can't do that."|
 
 
 ## Known Bugs
